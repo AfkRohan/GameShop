@@ -2,25 +2,25 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
     <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
-            <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="150sp" android:layout_marginLeft="150sp" android:layout_marginTop="24dp" android:gravity="center" android:text="Checkout Form" android:textSize="20sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/lblForm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="150sp" android:layout_marginLeft="150sp" android:layout_marginTop="24dp" android:gravity="center" android:text="Checkout Form" android:textSize="20sp" android:textStyle="bold"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
-            <EditText android:id="@+id/editTextTextPersonName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:ems="10" android:hint="First Name" android:inputType="textPersonName"/>
-            <EditText android:id="@+id/editTextTextPersonName2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginEnd="84dp" android:layout_marginRight="84dp" android:ems="10" android:hint="Last Name" android:inputType="textPersonName"/>
+            <EditText android:id="@+id/etxtFname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:ems="10" android:hint="First Name" android:inputType="textPersonName"/>
+            <EditText android:id="@+id/etxtLname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginEnd="84dp" android:layout_marginRight="84dp" android:ems="10" android:hint="Last Name" android:inputType="textPersonName"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
-            <EditText android:id="@+id/editTextTextEmailAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:ems="10" android:hint="Email ID" android:inputType="textEmailAddress"/>
-            <EditText android:id="@+id/editTextTextPostalAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:ems="10" android:hint="Shipping Address" android:inputType="textPostalAddress"/>
+            <EditText android:id="@+id/etxtEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:ems="10" android:hint="Email ID" android:inputType="textEmailAddress"/>
+            <EditText android:id="@+id/etxtAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:ems="10" android:hint="Shipping Address" android:inputType="textPostalAddress"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
-            <EditText android:id="@+id/editTextNumberDecimal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginEnd="84dp" android:layout_marginRight="84dp" android:ems="10" android:hint="Credit Card Number" android:inputType="numberDecimal"/>
-            <EditText android:id="@+id/editTextDate" android:layout_width="183dp" android:layout_height="48dp" android:layout_marginTop="32dp" android:layout_marginEnd="20dp" android:layout_marginRight="20dp" android:ems="10" android:hint="Expiry Date (MM/YY)" android:inputType="date"/>
+            <EditText android:id="@+id/etxtCardNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_marginEnd="84dp" android:layout_marginRight="84dp" android:ems="10" android:hint="Credit Card Number" android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/edtExpireDate" android:layout_width="183dp" android:layout_height="48dp" android:layout_marginTop="32dp" android:layout_marginEnd="20dp" android:layout_marginRight="20dp" android:ems="10" android:hint="Expiry Date (MM/YY)" android:inputType="date"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
-            <EditText android:id="@+id/editTextNumberDecimal2" android:layout_width="86dp" android:layout_height="47dp" android:layout_marginTop="32dp" android:layout_marginEnd="84dp" android:layout_marginRight="84dp" android:ems="10" android:hint="CVV" android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/etxtCVV" android:layout_width="86dp" android:layout_height="47dp" android:layout_marginTop="32dp" android:layout_marginEnd="84dp" android:layout_marginRight="84dp" android:ems="10" android:hint="CVV" android:inputType="numberDecimal"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
-            <Button android:id="@+id/btn_purchase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="150sp" android:layout_marginLeft="150sp" android:layout_marginBottom="20dp" android:text="Purchase"/>
+            <Button android:id="@+id/btnPurchase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="150sp" android:layout_marginLeft="150sp" android:layout_marginBottom="20dp" android:text="Purchase"/>
         </TableRow>
     </TableLayout>
 </ScrollView>

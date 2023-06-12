@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#221D1D"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
     <TextView
@@ -57,6 +58,7 @@
         android:layout_marginStart="89dp"
         android:layout_marginEnd="89dp"
         android:layout_marginBottom="48dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

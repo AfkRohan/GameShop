@@ -4,7 +4,19 @@
     <EditText android:id="@+id/etxtAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:ems="10" android:hint="Shipping Address " android:inputType="textPostalAddress" app:layout_constraintEnd_toStartOf="@+id/guideline5" app:layout_constraintStart_toStartOf="@+id/guideline2" app:layout_constraintTop_toBottomOf="@+id/etxtEmail"/>
     <EditText android:id="@+id/etxtFname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:ems="10" android:hint="First Name" android:inputType="textPersonName" app:layout_constraintEnd_toStartOf="@+id/guideline5" app:layout_constraintStart_toStartOf="@+id/guideline2" app:layout_constraintTop_toBottomOf="@+id/lblForm"/>
     <TextView android:id="@+id/lblForm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Checkout Form" android:textSize="20sp" android:textStyle="bold" app:layout_constraintEnd_toStartOf="@+id/guideline5" app:layout_constraintStart_toStartOf="@+id/guideline2" app:layout_constraintTop_toTopOf="@+id/guideline4"/>
-    <EditText android:id="@+id/etxtLname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:ems="10" android:hint="Last Name" android:inputType="textPersonName" app:layout_constraintEnd_toStartOf="@+id/guideline5" app:layout_constraintStart_toStartOf="@+id/guideline2" app:layout_constraintTop_toBottomOf="@+id/etxtFname"/>
+
+    <EditText
+        android:id="@+id/etxtLname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/etxtFname" />
+
     <Button android:id="@+id/btnPurchase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:text="Purchase" app:layout_constraintBottom_toTopOf="@+id/guideline3" app:layout_constraintEnd_toStartOf="@+id/guideline5" app:layout_constraintHorizontal_bias="0.434" app:layout_constraintStart_toStartOf="@+id/guideline2" app:layout_constraintTop_toBottomOf="@+id/edtExpireDate" app:layout_constraintVertical_bias="0.979"/>
     <EditText android:id="@+id/etxtCardNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:ems="10" android:hint="Credit Card Number" android:inputType="numberDecimal" app:layout_constraintEnd_toStartOf="@+id/guideline5" app:layout_constraintStart_toStartOf="@+id/guideline2" app:layout_constraintTop_toBottomOf="@+id/etxtAddress"/>
     <EditText android:id="@+id/etxtCVV" android:layout_width="86dp" android:layout_height="47dp" android:layout_marginStart="20dp" android:layout_marginLeft="20dp" android:layout_marginTop="32dp" android:ems="10" android:hint="CVV" android:inputType="numberDecimal" app:layout_constraintStart_toStartOf="@+id/guideline2" app:layout_constraintTop_toBottomOf="@+id/etxtCardNum"/>

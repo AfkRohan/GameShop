@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, CheckoutActivity::class.java)
+            val intent = Intent(this, ProductActivity::class.java)
             startActivity(intent)
             finish()
         }, 5000)

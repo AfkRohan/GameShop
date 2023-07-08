@@ -62,4 +62,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle"
         tools:srcCompat="@drawable/splash" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,9 +27,9 @@ class GamesAdapter(options: FirebaseRecyclerOptions<Games>) : FirebaseRecyclerAd
         holder.txtName.text = model.Title.toString()
         holder.btnClick.setOnClickListener {
             val intent = Intent(it.context, DetailsActivity::class.java)
-            intent.putExtra("Name", model.Title)
-            intent.putExtra("Price", model.Price)
-            intent.putExtra("Quantity", model.Quantity)
+            intent.putExtra("Name", holder.txtName.text)
+            intent.putExtra("Price", model.Price.toString())
+            intent.putExtra("Quantity", model.Quantity.toString())
             intent.putExtra("ImageUrl",model.Cover)
             intent.putExtra("Genre",model.Genre)
             it.context.startActivity(intent)

@@ -6,8 +6,10 @@ import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import java.time.Duration
 
 class CheckoutActivity : AppCompatActivity() {
+    private val mToastDuration = 80000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout)
@@ -19,43 +21,56 @@ class CheckoutActivity : AppCompatActivity() {
         val editTextExpiryDate : EditText = findViewById(R.id.edtExpireDate)
         val editTextCVV : EditText = findViewById(R.id.etxtCVV)
         var valid : Boolean = true;
+        var errors : String = ""
         val submitButton : Button = findViewById(R.id.btnPurchase)
         submitButton.setOnClickListener {
-            if(editTextFirstName.text.toString() == " "){
+            if(editTextFirstName.text.toString().isNullOrEmpty()){
                 valid = false;
-                Toast.makeText(applicationContext,"First Name Cannot be empty!",Toast.LENGTH_LONG).show()
+                errors += " \n First Name Cannot be empty!"
             }
-            if(editTextLastName.text.toString() == " "){
+            if(editTextLastName.text.toString().isNullOrEmpty()){
                 valid = false;
-                Toast.makeText(applicationContext,"Last Name Cannot be empty!",Toast.LENGTH_LONG).show()
+                errors += "\n Last Name Cannot be empty!"
             }
-            if(editTextEmail.text.toString() == " "){
+            if(editTextEmail.text.toString().isNullOrEmpty()){
                 valid = false;
-                Toast.makeText(applicationContext,"Email Cannot be empty!",Toast.LENGTH_LONG).show()
+                errors += " \n Email Cannot be empty!"
             }
-            if(Patterns.EMAIL_ADDRESS.matcher(editTextEmail.toString()).matches()){
+            else if(Patterns.EMAIL_ADDRESS.matcher(editTextEmail.toString()).matches()){
                 valid = false;
-                Toast.makeText(applicationContext,"Email Cannot be empty!",Toast.LENGTH_LONG).show()
+                errors += "\n Email Cannot be empty!"
             }
-            if(editTextAddress.text.toString() == " "){
+            if(editTextAddress.text.toString().isNullOrEmpty()){
                 valid = false;
-                Toast.makeText(applicationContext,"Address Cannot be empty!",Toast.LENGTH_LONG).show()
+                errors+= "\n Address Cannot be empty!"
             }
-            if(editTextCardNum.text.toString() == " " && editTextCardNum.text.toString().length !=16){
+            if(editTextCardNum.text.toString().isNullOrEmpty() || editTextCardNum.text.toString().length !=16){
                 valid = false;
-                Toast.makeText(applicationContext,"Credit Card Number Must be 16 characters!",Toast.LENGTH_LONG).show()
+                errors += "\n Credit Card Number Must be 16 characters!"
             }
-            if(editTextCVV.text.toString() == " " && editTextCVV.text.toString().length != 3){
+            if(editTextCVV.text.toString().isNullOrEmpty() || editTextCVV.text.toString().length != 3){
                 valid = false;
-                Toast.makeText(applicationContext,"CVV Must be 3 Characters!",Toast.LENGTH_LONG).show()
+                errors+="\n CVV Must be 3 Characters!"
             }
-            if(editTextExpiryDate.text.toString() == " "){
+            if(editTextExpiryDate.text.toString().isNullOrEmpty()){
                 valid = false;
-                Toast.makeText(applicationContext,"Expiry Date Cannot be empty!",Toast.LENGTH_LONG).show()
+                errors+="\n Expiry Date Cannot be empty!"
             }
             if(valid){
-                Toast.makeText(applicationContext,"Form submitted successfully! and product purchased",Toast.LENGTH_LONG).show()
+                val toast: Toast = Toast.makeText(applicationContext,"Form submitted successfully! and product purchased",Toast.LENGTH_LONG)
+                toast.show()
+                toast.show()
             }
+            else{
+                val toast: Toast = Toast.makeText(applicationContext,errors,Toast.LENGTH_LONG)
+                toast.show()
+                toast.show()
+                errors=""
+            }
+
         }
     }
+
+    // Function to invoke Toast
+
 }

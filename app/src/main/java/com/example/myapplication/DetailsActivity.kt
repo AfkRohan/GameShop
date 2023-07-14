@@ -31,8 +31,8 @@ class DetailsActivity : AppCompatActivity() {
 
         txtName.setText(gname)
         txtGenre.setText(genre)
-        txtQuantity.setText(gquant.toString())
-        btnPrice.setText(gprice.toString())
+        txtQuantity.setText("Only "+gquant.toString() + " left in stock!")
+        btnPrice.setText(gprice.toString() + "CAD")
         btnPrice.setOnClickListener {
             val intent = Intent(it.context, CheckoutActivity::class.java)
             it.context.startActivity(intent)

@@ -6,12 +6,14 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.WindowManager
+import android.widget.ImageView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        val  imgView : ImageView = findViewById(R.id.imgLogo)
+        imgView.setImageResource(R.drawable.splash)
         //Learned from https://www.geeksforgeeks.org/how-to-create-a-splash-screen-in-android-using-kotlin/
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,

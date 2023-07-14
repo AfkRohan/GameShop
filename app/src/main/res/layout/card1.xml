@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:layout_margin="10dp"
     android:background="#F8F2F2"
+    android:foregroundGravity="center"
+    android:gravity="center"
     android:orientation="vertical">
 
     <TextView
@@ -19,9 +22,11 @@
 
     <ImageView
         android:id="@+id/imgGame"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_centerInParent="true"
+        android:layout_gravity="center|center_horizontal"
+        android:foregroundGravity="center" />
 
     <TextView
         android:id="@+id/txtPrice"

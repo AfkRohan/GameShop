@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#221D1D"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:textAlignment="center"
+    tools:context=".StartApp">
+
+    <ImageView
+        android:id="@+id/imgViewIntro"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#111112"
+        app:srcCompat="@drawable/intro"
+        tools:srcCompat="@drawable/intro" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Developers"
+        android:textAlignment="center"
+        android:textColor="#DFCDCD"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtStudent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#E30909"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtStudent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#E30909"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtStudent3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#E30909"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/txtProfName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Professor"
+        android:textAlignment="center"
+        android:textColor="#DFCDCD"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtProf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daniel Verhagen"
+        android:textAlignment="center"
+        android:textColor="#E30909"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnStartApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start App" />
+</LinearLayout>

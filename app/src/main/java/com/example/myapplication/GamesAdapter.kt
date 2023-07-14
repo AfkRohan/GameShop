@@ -23,7 +23,7 @@ class GamesAdapter(options: FirebaseRecyclerOptions<Games>) : FirebaseRecyclerAd
     override fun onBindViewHolder(holder: MyViewHolder, position: Int, model: Games) {
         val storRef: StorageReference = FirebaseStorage.getInstance().getReferenceFromUrl(model.Cover.toString())
         Glide.with(holder.imgPhoto.context).load(storRef).into(holder.imgPhoto)
-        holder.txtPrice.text = model.Price.toString()
+        holder.txtPrice.text = model.Price.toString() + "CAD"
         holder.txtName.text = model.Title.toString()
         holder.btnClick.setOnClickListener {
             val intent = Intent(it.context, DetailsActivity::class.java)
